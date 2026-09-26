@@ -1,0 +1,104 @@
+seq,category,rfc_name,description
+1,Finance & Controlling (FI/CO),BAPI_ACC_DOCUMENT_POST,"Posts accounting documents (GL, AP, AR) with real-time balancing."
+2,Finance & Controlling (FI/CO),BAPI_ACC_DOCUMENT_CHECK,Validates an accounting document structure before attempting to post.
+3,Finance & Controlling (FI/CO),BAPI_ACC_DOCUMENT_REV_POST,Reverses a previously posted accounting document.
+4,Finance & Controlling (FI/CO),BAPI_GL_ACC_GETLIST,Retrieves a filtered list of G/L accounts from the Chart of Accounts.
+5,Finance & Controlling (FI/CO),BAPI_GL_ACC_GETDETAIL,Fetches master data structural details for a specific G/L account.
+6,Finance & Controlling (FI/CO),BAPI_CUSTOMER_GETINTVERSION,Reads international address attributes for customer masters.
+7,Finance & Controlling (FI/CO),BAPI_FIXEDASSET_CREATE,Creates fixed asset master records.
+8,Finance & Controlling (FI/CO),BAPI_FIXEDASSET_CHANGE,Modifies properties of existing fixed assets.
+9,Finance & Controlling (FI/CO),BAPI_FIXEDASSET_OVRV_LIST,Extracts a list of asset values and overview records.
+10,Finance & Controlling (FI/CO),BAPI_COSTCENTER_CREATEMULTIPLE,Programmatically provisions one or many Cost Center master records.
+11,Finance & Controlling (FI/CO),BAPI_COSTCENTER_GETLIST,Extracts cost centers matching specified controlling filters.
+12,Finance & Controlling (FI/CO),BAPI_PROFITCENTER_CREATE,Generates a new Profit Center master data node.
+13,Finance & Controlling (FI/CO),BAPI_PROFITCENTER_GETLIST,Pulls structural hierarchical listings of system Profit Centers.
+14,Materials Management (MM),BAPI_PO_CREATE1,Standard modern S/4HANA function to create Purchase Orders.
+15,Materials Management (MM),BAPI_PO_CHANGE,"Modifies existing Purchase Orders (items, quantities, schedules)."
+16,Materials Management (MM),BAPI_PO_GETDETAIL1,"Details items, account assignments, and history logs for a PO."
+17,Materials Management (MM),BAPI_PR_CREATE,Creates transactional Purchase Requisitions.
+18,Materials Management (MM),BAPI_PR_CHANGE,Updates existing operational Purchase Requisitions.
+19,Materials Management (MM),BAPI_PO_RELEASE,Approves/releases Purchase Orders via workflow triggers.
+20,Materials Management (MM),BAPI_GOODSMVT_CREATE,"Posts all inventory movements (Goods Receipt, Goods Issue, Transfer Posting)."
+21,Materials Management (MM),BAPI_GOODSMVT_CANCEL,Reverses/cancels material documents created by goods movements.
+22,Materials Management (MM),BAPI_MATERIAL_SAVEDATA,"Ultimate master API to create or update Material Master views (Basic, Plant, Sales, Storage)."
+23,Materials Management (MM),BAPI_MATERIAL_GET_DETAIL,Extracts detailed master attributes for a specific material number.
+24,Materials Management (MM),BAPI_MATERIAL_GETLIST,Returns a filtered index of materials based on selection ranges.
+25,Materials Management (MM),BAPI_MATERIAL_AVAILABILITY,Simulates and checks available-to-promise (ATP) stock for a material.
+26,Materials Management (MM),BAPI_MATERIAL_STOCK_REQ_LIST,Fetches current stock/requirements lists (MD04 screen data).
+27,Materials Management (MM),BAPI_MATERIAL_BOM_GROUP_CREATE,Programmatically builds a Bill of Materials (BOM) master relationship.
+28,Materials Management (MM),BAPI_INV_COUNT_CHARG,Updates physical inventory counts on active records.
+29,Sales & Distribution (SD),BAPI_SALESORDER_CREATEFROMDAT2,Standard modern API to create Sales Orders.
+30,Sales & Distribution (SD),BAPI_SALESORDER_CHANGE,"Alters quantities, pricing, or dates on existing Sales Orders."
+31,Sales & Distribution (SD),BAPI_SALESORDER_GETLIST,Returns filtered records of sales orders per customer or date range.
+32,Sales & Distribution (SD),BAPI_SALESORDER_SIMULATE,"Pre-calculates pricing, taxes, and availability without committing data to disk."
+33,Sales & Distribution (SD),BAPI_QUOTATION_CREATEFROMDATA2,Creates customer sales quotations.
+34,Sales & Distribution (SD),BAPI_CUSTOMERCONTRACT_CREATE,Sets up long-term customer contract master arrangements.
+35,Sales & Distribution (SD),BAPI_OUTB_DELIVERY_CREATE_SLS,Generates outbound deliveries from referenced Sales Orders.
+36,Sales & Distribution (SD),BAPI_OUTB_DELIVERY_CHANGE,Modifies delivery quantities or triggers picking/packing parameters.
+37,Sales & Distribution (SD),BAPI_OUTB_DELIVERY_CONFIRM_PICK,Confirms picked quantities for outbound shipments.
+38,Sales & Distribution (SD),BAPI_BILLINGDOC_CREATEMULTIPLE,Mass-generates invoices and billing documents from delivery records.
+39,Sales & Distribution (SD),BAPI_BILLINGDOC_CANCEL1,Cancels and creates cancellation items for standard billing files.
+40,Sales & Distribution (SD),BAPI_CUSTOMER_GETDETAIL2,Fetches specific Sales/Company code data for a Customer record.
+41,Sales & Distribution (SD),BAPI_CUSTOMER_CHECKEXISTENCE,"Fast, lightweight verification of whether a Customer ID exists in the system."
+42,Sales & Distribution (SD),BAPI_VENDOR_GETDETAIL,Pulls Purchasing/Company code configurations for a Vendor record.
+43,Sales & Distribution (SD),BAPI_VENDOR_CHECKEXISTENCE,Fast verification of whether a Vendor ID exists.
+44,Production Planning (PP),BAPI_PRODORD_CREATE,Generates Production Orders from scratch or planned orders.
+45,Production Planning (PP),BAPI_PRODORD_CHANGE,"Changes operation dates, components, or quantities on a Production Order."
+46,Production Planning (PP),BAPI_PRODORD_RELEASE,Dispatches and releases a Production Order for shop floor execution.
+47,Production Planning (PP),BAPI_PRODORD_GET_DETAIL,"Retrieves operations, components, and headers of production orders."
+48,Production Planning (PP),BAPI_PRODORDCONF_CREATE_HDR,Posts final or partial confirmations for the entire order header.
+49,Production Planning (PP),BAPI_PRODORDCONF_CREATE_TT,"Confirms times, yields, and scrap at the operation step level (Time Ticket)."
+50,Production Planning (PP),BAPI_PLANNEDORDER_CREATE,Sets up discrete execution requirements via Planned Orders.
+51,Production Planning (PP),BAPI_PLANNEDORDER_EXIST_CHECK,Validates the structural consistency of a planned order.
+52,S/4HANA Business Partner (BP),BAPI_BUPA_CREATE_FROM_DATA,Creates a generic baseline Business Partner profile record.
+53,S/4HANA Business Partner (BP),BAPI_BUPA_CHANGE,"Updates central fields (names, legal entities, groupings) on an existing BP."
+54,S/4HANA Business Partner (BP),BAPI_BUPA_ROLE_ADD,"Extends a BP to explicit roles (e.g., FLCU01 Customer, FLVN01 Vendor)."
+55,S/4HANA Business Partner (BP),BAPI_BUPA_ADDRESS_ADD,"Assigns secondary, structural, or localized addresses to an active BP."
+56,S/4HANA Business Partner (BP),BAPI_BUPA_BANKDETAIL_ADD,"Appends bank routing numbers, IBANs, and account details to the BP profile."
+57,S/4HANA Business Partner (BP),BAPI_BUPA_CENTRAL_GETDETAIL,"Extracts core organizational, personal, or group details from a BP profile."
+58,S/4HANA Business Partner (BP),BAPI_BUPA_SEARCH,"Searches for Business Partners using complex criteria (wildcards, postal codes)."
+59,Basis & Security: User Management,BAPI_USER_CREATE1,Programmatic pathway to provision new enterprise user logins via the SDK.
+60,Basis & Security: User Management,BAPI_USER_CHANGE,"Modifies user attributes, defaults, address components, or language parameters."
+61,Basis & Security: User Management,BAPI_USER_DELETE,Permanently drops a user ID configuration block from the current client.
+62,Basis & Security: User Management,BAPI_USER_GET_DETAIL,"Resolves configuration parameters, active defaults, profiles, and structural roles."
+63,Basis & Security: User Management,BAPI_USER_LOCK,Administratively locks out a user account due to security protocol or termination.
+64,Basis & Security: User Management,BAPI_USER_UNLOCK,Restores active access status to a previously locked user account.
+65,Basis & Security: User Management,BAPI_USER_LOCKEFFECTIVE,Evaluates whether a user is effectively blocked via internal matrix mechanics.
+66,Basis & Security: User Management,BAPI_USER_EXISTENCE_CHECK,Lightweight call to verify if a User ID exists before running pipeline automation.
+67,Basis & Security: User Management,BAPI_USER_DISPLAY,Reads display-only metadata parameters without touching security contexts.
+68,Basis & Security: Roles & Authorizations,BAPI_USER_ACTGROUPS_ASSIGN,Maps PFCG Roles (Activity Groups) directly to a specified User ID.
+69,Basis & Security: Roles & Authorizations,BAPI_USER_PROFILES_ASSIGN,Direct low-level assignment of Authorization Profiles to an account.
+70,Basis & Security: Roles & Authorizations,SUSR_USER_AUTH_CHECK_RFC,Explicitly verifies if the calling SDK session has proper authorizations.
+71,Basis & Security: Roles & Authorizations,AUTH_CHECK_DATASET,Validates whether the remote system user has rights to read/write specific OS files.
+72,Basis & Security: Roles & Authorizations,BAPI_USER_GETLIST,Extracts a list of users filtered by specific role criteria or wildcards.
+73,Basis & Security: Roles & Authorizations,PRG_ACTIVITY_GROUPS_LOAD_ALL,Pulls an index of all composite and single roles configured inside the dictionary.
+74,"Basis: Auditing, Change Docs, Crypto",SMLOG_READ_LOG,Extracts Security Audit Log data (useful for monitoring SDK access anomalies).
+75,"Basis: Auditing, Change Docs, Crypto",CHANGEDOCUMENT_READ,"Queries logging tables to track exact master data edits (who, what, and when)."
+76,"Basis: Auditing, Change Docs, Crypto",BAPI_USER_GET_PASSWORD_STATUS,Returns metadata regarding password expiration dates and composition states.
+77,"Basis: Auditing, Change Docs, Crypto",SSFS_READ_RECORD,Technical security call to read localized secure storage parameters.
+78,"Basis: Auditing, Change Docs, Crypto",GENERATE_SECURE_RANDOM_NUMBER,Cryptographically sound random generation engine handled by the SAP Kernel.
+79,System Admin: Background Batch Jobs,BP_JOB_CREATE,Registers a new system background batch process via your remote integration loop.
+80,System Admin: Background Batch Jobs,BP_JOB_RELEASE,Immediately schedules a configured background job into an active execution queue.
+81,System Admin: Background Batch Jobs,BP_JOB_SELECT,"Queries the runtime engine for status parameters of explicit jobs (running, canceled, etc.)."
+82,System Admin: Background Batch Jobs,BP_JOB_DELETE,Aborts and removes historical batch jobs from active administrative tables.
+83,System Admin: Background Batch Jobs,BP_JOBLOG_READ,Spools the text log results out of an executed batch process back into your SDK environment.
+84,System Admin: Data Dictionary & Env,DDIF_FIELDINFO_GET,"Extracts data dictionary metadata, structure definitions, and precise character lengths."
+85,System Admin: Data Dictionary & Env,DDIF_NAMETAB_GET,Returns the raw layout (nametab fields) of an internal structure or database table.
+86,System Admin: Data Dictionary & Env,RFC_GET_SYSTEM_INFO,"Reads S/4HANA release versions, kernel configurations, active hostnames, and IP details."
+87,System Admin: Data Dictionary & Env,RFC_READ_TABLE,"Queries internal system dictionary tables directly (e.g., MARA, ACDOCA). Keep row sizes small."
+88,System Admin: Data Dictionary & Env,TH_USER_LIST,Fetches a real-time list of all active logged-in application server sessions.
+89,System Admin: Data Dictionary & Env,TH_SERVER_LIST,Maps out the layout architecture of active application servers across the cluster.
+90,System Admin: Data Dictionary & Env,GET_SYSTEM_TIME_ZONE,Returns the canonical localized time setting used by the application tier database.
+91,Transaction Control & Log Framework,BAPI_TRANSACTION_COMMIT,Persists data adjustments permanently down to the database layer.
+92,Transaction Control & Log Framework,BAPI_TRANSACTION_ROLLBACK,Drops the cache pipeline if an error structure registers in your wrapper's validation.
+93,Transaction Control & Log Framework,BAL_LOG_CREATE,Spawns structural records inside the central Application Log Framework (SLG1).
+94,Transaction Control & Log Framework,BAL_LOG_MSG_ADD,"Appends specific tracking alerts, exceptions, or error variables into the current memory queue."
+95,Transaction Control & Log Framework,BAL_DB_SAVE,Commits the accumulated BAL logs permanently down to the system logging database tables.
+96,Technical Comms & Document Mgmt (DIR/IDoc),BAPI_DOCUMENT_CREATE2,Generates a Document Info Record (DIR) to hold binary metadata attachments.
+97,Technical Comms & Document Mgmt (DIR/IDoc),BAPI_DOCUMENT_CHECKOUTVIEW2,Checks out and copies document source binary blobs down to your SDK client.
+98,Technical Comms & Document Mgmt (DIR/IDoc),BAPI_DOCUMENT_CHANGE2,"Alters active statuses, version classifications, or metadata notes on DIR records."
+99,Technical Comms & Document Mgmt (DIR/IDoc),IDOC_INBOUND_ASYNCHRONOUS,Submits standard intermediate documents (IDocs) asynchronously over fast binary connections.
+100,Technical Comms & Document Mgmt (DIR/IDoc),BAPI_IDOC_INPUT1,Triggers immediate processing workflows for an inbound transaction data file.
+101,Technical Comms & Document Mgmt (DIR/IDoc),RSPO_DOWNLOAD_SPOOLJOB,"Pulls print spool records down to your client machine, transforming them into file streams."
+102,Technical Comms & Document Mgmt (DIR/IDoc),BAPI_HELPVALUES_GET,Emulates frontend F4 search-helps to return lists of valid domain choices to your application.
+103,Technical Comms & Document Mgmt (DIR/IDoc),RFC_FUNCTION_SEARCH,Searches the active central library for available function module names matching a string.
